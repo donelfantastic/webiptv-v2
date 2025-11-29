@@ -246,8 +246,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   window.onload = () => {
  // const placeholderM3ULink = m3uLinkInput.placeholder;
-    const placeholderM3ULink = atob("aHR0cHM6Ly9pcHR2LW9yZy5naXRodWIuaW8vaXB0di9pbmRleC5jb3VudHJ5Lm0zdQ==");
- // const placeholderM3ULink = atob("aHR0cHM6Ly93b3JsZC1wcm94aWZpZXIueHl6L2RhZGR5bGl2ZS9wbGF5bGlzdC5tM3U4");
+ // country   
+ // const placeholderM3ULink = atob("aHR0cHM6Ly9pcHR2LW9yZy5naXRodWIuaW8vaXB0di9pbmRleC5jb3VudHJ5Lm0zdQ==");
+ // category   
+    const placeholderM3ULink = atob("aHR0cHM6Ly9pcHR2LW9yZy5naXRodWIuaW8vaXB0di9pbmRleC5jYXRlZ29yeS5tM3U=");
     if (placeholderM3ULink) {
       channels = [];
       categorySelect.innerHTML = "";
