@@ -184,7 +184,17 @@ document.addEventListener("DOMContentLoaded", () => {
         src: sURL,
         type: "video/mp2t"
       });
+    } else if (url.indexOf("ts") > 0) {
+      videojsPlayer.src({
+        src: sURL,
+        type: "video/mp2t"
+      });
     } else if (url.indexOf(".m3u8") > 0) {
+      videojsPlayer.src({
+        type: "application/x-mpegURL",
+        src: sURL
+      });
+    } else if (url.indexOf("m3u8") > 0) {
       videojsPlayer.src({
         type: "application/x-mpegURL",
         src: sURL
