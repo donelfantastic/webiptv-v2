@@ -161,9 +161,9 @@ document.addEventListener("DOMContentLoaded", () => {
       preload: "auto"
     });
     // Used corsproxy if url index of http protocol
-    let secureMe = atob("aHR0cHM6Ly9jb3JzLXByb3h5LmNvb2tzLmZ5aQ==");
+    let needHttp = atob("aHR0cHM6Ly9jb3JzLXByb3h5LmNvb2tzLmZ5aQ==");
     let needHttps = atob("aHR0cHM6Ly9hbnl3aGVyZS5wd2lzZXR0aG9uLmNvbQ==");
-    function getSecureUrl(url, corsProxy = needHttps ) {
+    function getSecureUrl(url, corsProxy = needHttp ) {
       try {
         const parsed = new URL(url);
         if (parsed.protocol === "https:") {
